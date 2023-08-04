@@ -1,0 +1,16 @@
+encoding  utf-8
+
+map MP-Réseau_Bovinant-tot -title "Réseau_Bovinant"
+	
+    MP-Francis1-tot@Francis1
+    break    
+
+endmap
+
+map MC-Réseau_Bovinant-tot -title "Réseau_Bovinant"
+	
+    MC-Francis1-tot@Francis1
+    break
+    
+
+endmap

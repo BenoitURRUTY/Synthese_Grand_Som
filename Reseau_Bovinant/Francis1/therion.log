@@ -1,0 +1,292 @@
+therion 5.5.7 (2021-02-06)
+  - using Proj 7.2.1, compiled against 7.2.1
+initialization file: /etc/therion.ini
+reading ... done
+checking optional fonts csr10 csti10 csbx10 csss10 csssi10 ... NOT INSTALLED
+checking optional fonts cmcyr10 cmcti10 cmcbx10 cmcss10 cmcssi10 ... NOT INSTALLED
+configuration file: thconfig
+reading ... done
+reading source files ... done
+preprocessing database ... done
+scanning centreline tree ... done
+searching for centerline loops ... done
+calculating station coordinates ... done
+average loop error: 0.70%
+processing survey data ... 
+####################### cavern log file ########################
+ 1> Survex 1.2.45
+ 2> Copyright © 1990-2021 Olly Betts
+ 3> La topographie n’a pas de points fixes. Par conséquent j’ai fixé 1 à (0,0,0)
+ 4> 
+ 5> La topographie contient 207 stations, connectées par 206 visées.
+ 6> Il y a 1 bouclage.
+ 7> La topographie contient 2 composants connectés.
+ 8> Longueur totale de la topographie =  120.48m ( 120.48m ajusté)
+ 9> Longueur totale en projection horizontale =   99.73m
+10> Longueur totale verticale =   44.80m
+11> Intervalle vertical = 55.71m (de 3 à 16.57m jusqu’à 188 à -39.15m)
+12> Intervalle Nord-Sud = 20.62m (de 188 à 3.45m jusqu’à 47 à -17.17m)
+13> Intervalle Est-Ouest = 80.08m (de 199 à 78.49m jusqu’à 5 à -1.59m)
+14>  173 1-nœuds.
+15>    3 2-nœuds.
+16>    1 4-nœud.
+17>    7 5-nœuds.
+18>    6 6-nœuds.
+19>    6 7-nœuds.
+20>    1 8-nœud.
+21>    3 9-nœuds.
+22>    2 10-nœuds.
+23>    1 11-nœud.
+24>    3 12-nœuds.
+25>    1 14-nœud.
+26> 
+######################### transcription ########################
+ 3> 1 : A0@Francis1.Francis1
+ 5> 207 : .@Francis1.Francis1 -- 206 : .@Francis1.Francis1
+ 6> 1 : A0@Francis1.Francis1
+ 7> 2 : A1@Francis1.Francis1
+11> 3 : .@Francis1.Francis1 -- 188 : .@Francis1.Francis1
+12> 188 : .@Francis1.Francis1 -- 47 : .@Francis1.Francis1
+13> 199 : .@Francis1.Francis1 -- 5 : .@Francis1.Francis1
+14> 173 : .@Francis1.Francis1
+15> 3 : .@Francis1.Francis1
+16> 1 : A0@Francis1.Francis1
+17> 7 : A5@Francis1.Francis1
+18> 6 : .@Francis1.Francis1
+19> 6 : .@Francis1.Francis1
+20> 1 : A0@Francis1.Francis1
+21> 3 : .@Francis1.Francis1
+22> 2 : A1@Francis1.Francis1
+23> 1 : A0@Francis1.Francis1
+24> 3 : .@Francis1.Francis1
+25> 1 : A0@Francis1.Francis1
+#################### end of cavern log file ####################
+done
+calculating basic statistics ... done
+processing extended elevation ... done
+processing references ... done
+selecting export objects ... done
+processing projection plan ... done
+writing Data/Francis1-map.xvi ... done
+processing projection extended ... done
+writing Data/Francis1-coupe.xvi ... done
+processing projection elevation ... done
+writing Data/Francis1-coupe_elevation.xvi ... done
+
+
+############### export maps & scraps selection #################
+S     -.-- @ ()
+########## end of export maps & scraps selection ###############
+writing Outputs/Francis1-coupe_elevation.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+**data.mp
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [4001] [4002] [4003] [4004] [4005] [4006] [4007] [4008] [4009] [4010] [4011] [
+4012] [4013] [4014]
+[4015] [1] [2] (./mptextmp.mp) [3] (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] [6]
+[7] [8] [9] [10] [11] [12] [13] [14] )
+ 
+Here is how much of MetaPost's memory you used:
+ 5085 strings using 139383 characters
+ 3570664 bytes of node memory
+ 1721 symbolic tokens
+ 9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
+29 output files written: data.1 .. data.4015
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+(./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
+ 61 numeric registers used out of 32768
+
+[1] ) 
+Here is how much of TeX's memory you used:
+ 274 strings out of 496948
+ 2785 string characters out of 6202882
+ 54488 words of memory out of 5000000
+ 1530 multiletter control sequences out of 15000+600000
+ 16411 words of font info for 55 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 12i,5n,8p,534b,70s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on data.pdf (1 page, 69969 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
+
+
+############### export maps & scraps selection #################
+S     -.-- @ ()
+########## end of export maps & scraps selection ###############
+writing Outputs/Francis1-coupe.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+**data.mp
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [4001] [4002] [4003] [4004] [4005] [4006] [4007] [4008] [4009] [4010] [4011] [
+4012] [4013] [4014]
+[4015] [1] [2] (./mptextmp.mp) [3] (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] [6]
+[7] [8] [9] [10] [11] [12] [13] [14] [15] )
+ 
+Here is how much of MetaPost's memory you used:
+ 5259 strings using 147591 characters
+ 3577648 bytes of node memory
+ 1721 symbolic tokens
+ 9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
+30 output files written: data.1 .. data.4015
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+(./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
+ 62 numeric registers used out of 32768
+
+[1] ) 
+Here is how much of TeX's memory you used:
+ 275 strings out of 496948
+ 2792 string characters out of 6202882
+ 57007 words of memory out of 5000000
+ 1531 multiletter control sequences out of 15000+600000
+ 16411 words of font info for 55 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 12i,5n,8p,534b,70s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on data.pdf (1 page, 70872 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
+
+
+############### export maps & scraps selection #################
+S     -.-- @ ()
+########## end of export maps & scraps selection ###############
+writing Outputs/Francis1-plan.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+**data.mp
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [4001] [4002] [4003] [4004] [4005] [4006] [4007] [4008] [4009] [4010] [4011] [
+4012] [4013] [4014]
+[4015] [1] [2] (./mptextmp.mp) [3] (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] )
+ 
+Here is how much of MetaPost's memory you used:
+ 5076 strings using 137050 characters
+ 3570664 bytes of node memory
+ 1721 symbolic tokens
+ 9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
+20 output files written: data.1 .. data.4015
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+(./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
+ 52 numeric registers used out of 32768
+
+[1] ) 
+Here is how much of TeX's memory you used:
+ 265 strings out of 496948
+ 2713 string characters out of 6202882
+ 53590 words of memory out of 5000000
+ 1521 multiletter control sequences out of 15000+600000
+ 16411 words of font info for 55 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 12i,5n,8p,414b,72s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on data.pdf (1 page, 48989 bytes).
+PDF statistics:
+ 45 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
+writing Outputs/Francis1.lox ... done
+writing Outputs/questions.html ... done
+writing Outputs/Francis1.html ... done
+####################### metapost log file ########################
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+**data.mp
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp [1] )
+1 output file written: data.1
+
+
+#################### end of metapost log file ####################
+writing Outputs/Francis1 ... done
+therion: warning -- data not georeferenced -- unable to export KML file
+compilation time: 1 sec
+
+
+######################### loop errors ##########################
+REL-ERR ABS-ERR TOTAL-L STS X-ERROR Y-ERROR Z-ERROR STATIONS
+  1.15%    0.0m    1.6m   2    0.0m    0.0m   -0.0m [A40@Francis1.Francis1 - A39 - A40]
+  0.25%    0.0m    1.6m   2    0.0m    0.0m   -0.0m [A39@Francis1.Francis1 - A40 - A39]
+##################### end of loop errors #######################

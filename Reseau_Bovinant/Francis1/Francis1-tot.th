@@ -1,0 +1,11 @@
+encoding  utf-8
+
+survey Francis1 -title "Francis1"
+   input Data/Francis1.th
+	
+   input Data/Francis1-plan.th2
+	#input Francis1-SP.th
+	input Data/Francis1-coupe.th2
+	#input Francis1-SC.th
+	
+endsurvey
