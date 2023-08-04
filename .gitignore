@@ -1,0 +1,19 @@
+#ignorer PDF
+*.pdf
+
+#ignorer DEM
+*.asc
+
+#ignorer geoTIFF
+*.tif
+*.xvi
+
+*.kml
+*.lox
+*.log
+*.shx
+*.shp
+*.dbf
+*.prj
+*.sbx
+*.sbn
