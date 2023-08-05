@@ -67,6 +67,7 @@ processing extended elevation ... done
 processing references ... done
 selecting export objects ... done
 processing projection plan ... done
+average distortion: 0.00%
 writing Data/Francis1-map.xvi ... done
 processing projection extended ... done
 writing Data/Francis1-coupe.xvi ... done
@@ -79,7 +80,7 @@ S     -.-- @ ()
 ########## end of export maps & scraps selection ###############
 writing Outputs/Francis1-coupe_elevation.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 12:58
 **data.mp
 (/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
 (/usr/share/texlive/texmf-dist/metapost/base/plain.mp
@@ -103,7 +104,7 @@ Here is how much of MetaPost's memory you used:
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -145,7 +146,7 @@ S     -.-- @ ()
 ########## end of export maps & scraps selection ###############
 writing Outputs/Francis1-coupe.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 12:58
 **data.mp
 (/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
 (/usr/share/texlive/texmf-dist/metapost/base/plain.mp
@@ -169,7 +170,7 @@ Here is how much of MetaPost's memory you used:
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -207,11 +208,12 @@ done
 
 
 ############### export maps & scraps selection #################
-S     -.-- @ ()
+S   -18.58 SP-Francis1-1@Francis1 ()
+S     -.-- scrap43@Francis1 ()
 ########## end of export maps & scraps selection ###############
 writing Outputs/Francis1-plan.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 12:58
 **data.mp
 (/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
 (/usr/share/texlive/texmf-dist/metapost/base/plain.mp
@@ -219,22 +221,25 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 {randomseed:=42}
  [4001] [4002] [4003] [4004] [4005] [4006] [4007] [4008] [4009] [4010] [4011] [
 4012] [4013] [4014]
-[4015] [1] [2] (./mptextmp.mp) [3] (./mptextmp.mp) (./mptextmp.mp)
-(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] )
+[4015] [1]
+[Warning: scrap outline intersects itself in scrap SP-Francis1-1@Francis1]
+[2] [3] [4] (./mptextmp.mp) [5] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [6] [7] [8] [9] [10] [11] [12]
+[13] [14] [15] )
  
 Here is how much of MetaPost's memory you used:
- 5076 strings using 137050 characters
- 3570664 bytes of node memory
- 1721 symbolic tokens
- 9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
-20 output files written: data.1 .. data.4015
+ 7109 strings using 179357 characters
+ 3651064 bytes of node memory
+ 1723 symbolic tokens
+ 11i,82n,16p,312b,5f stack positions out of 16i,98n,17p,312b,6f
+30 output files written: data.1 .. data.4015
 
 
 #################### end of metapost log file ####################
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdftex 2023.5.23)  5 AUG 2023 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,35 +248,35 @@ entering extended mode
 (/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
 (./th_fontdef.tex{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
 (./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
- 52 numeric registers used out of 32768
+ 63 numeric registers used out of 32768
 
 [1] ) 
 Here is how much of TeX's memory you used:
- 265 strings out of 496948
- 2713 string characters out of 6202882
- 53590 words of memory out of 5000000
- 1521 multiletter control sequences out of 15000+600000
+ 276 strings out of 496948
+ 2801 string characters out of 6202882
+ 54620 words of memory out of 5000000
+ 1532 multiletter control sequences out of 15000+600000
  16411 words of font info for 55 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  12i,5n,8p,414b,72s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on data.pdf (1 page, 48989 bytes).
+Output written on data.pdf (1 page, 71185 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 ##################### end of pdftex log file #####################
 done
-writing Outputs/Francis1.lox ... done
+writing Outputs/Francis1.lox ..... done
 writing Outputs/questions.html ... done
 writing Outputs/Francis1.html ... done
 ####################### metapost log file ########################
-This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 00:58
+This is MetaPost, version 2.00 (TeX Live 2020/Debian) (kpathsea version 6.3.2)  5 AUG 2023 12:58
 **data.mp
 (/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
 (/usr/share/texlive/texmf-dist/metapost/base/plain.mp
@@ -290,3 +295,11 @@ REL-ERR ABS-ERR TOTAL-L STS X-ERROR Y-ERROR Z-ERROR STATIONS
   1.15%    0.0m    1.6m   2    0.0m    0.0m   -0.0m [A40@Francis1.Francis1 - A39 - A40]
   0.25%    0.0m    1.6m   2    0.0m    0.0m   -0.0m [A39@Francis1.Francis1 - A40 - A39]
 ##################### end of loop errors #######################
+
+
+###################### scrap distortions #######################
+ PROJECTION: plan
+ AVERAGE  MAXIMAL  SCRAP
+   0.00%    0.02%  SP-Francis1-1@Francis1
+   0.00%    0.00%  scrap43@Francis1
+################### end of scrap distortions ###################
