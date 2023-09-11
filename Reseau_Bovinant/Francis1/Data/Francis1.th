@@ -2,10 +2,20 @@
 # Francis
 # from to tape compass clino (declination undefined)
 # units tape meters compass clino degrees
+# point au vernis 
+
+# depart de la chatiere de gypse -400 apres le P15
+# arret de a la salle des reseaux amonts
+
 
 survey Francis1 -title "Francis1"
   centerline
     date 2022.12.04
+    team "Agathe/Flaviano"
+    team "Stéphane/Kanschine"
+    team "Mahieddine/Bourekoum"
+    team "Thomas/Rispal"
+    team "Arne/Bahr"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -312,9 +312,3 @@ point 787.4000000000001 2047.25 station -name A0
 endscrap
 
 
-
-scrap scrap43 -scale [-128.0 -128.0 7687.0592 -128.0 0.0 0.0 198.50250368 0.0 m]
-
-endscrap
-
-

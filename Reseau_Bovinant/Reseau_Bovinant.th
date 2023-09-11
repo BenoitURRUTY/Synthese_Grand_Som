@@ -1,6 +1,6 @@
 encoding  utf-8
 
-survey Réseau_Bovinant -title "Réseau_Bovinant"
+survey Reseau_Bovinant -title "Reseau_Bovinant"
    input Francis1/Francis1-tot.th
 	
  #join line

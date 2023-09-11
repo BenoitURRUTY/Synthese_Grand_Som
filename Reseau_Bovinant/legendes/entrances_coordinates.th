@@ -12,7 +12,9 @@ layout Entrances_coords_Ded
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocation_a{Réseau_Bovinant --  Lat. : XXXXX N ; Long. : XXXXX E ; Alt. : XXXX m}
+		\def\thlocation_a{Trou Baisant --  Lat. : 45.3881444 N ; Long. : 5.8161126 E ; Alt. : 1590 m}
+		\def\thlocation_b{Puits Francis --  Lat. : 45.3878505 N ; Long. : 5.8152549 E ; Alt. : 1565 m}
+		\def\thlocation_c{Trou du Marteau --  Lat. : 45.3881122 N ; Long. : 5.8152296 E ; Alt. : 1565 m}
 	endcode 
 	
 endlayout
@@ -38,6 +40,12 @@ layout Coords_Header_Ded
 		\ECoordinates={
 			\edef\tmp{\thlocation_a} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thlocation_a\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocation_a} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocation_b\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocation_a} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocation_c\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

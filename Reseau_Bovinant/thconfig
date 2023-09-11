@@ -2,7 +2,7 @@ encoding  utf-8
 
 # 1-SOURCES 
 
-source Réseau_Bovinant.th
+source Reseau_Bovinant.th
 
 # Add entrances coordinates
 #input legendes/entrances_coordinates.th
@@ -123,10 +123,10 @@ layout my_layout
 
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-   #symbol-hide line survey
-   #symbol-hide point cave-station
+   symbol-hide line survey
+   symbol-hide point cave-station
 
-   debug station-names
+   #debug station-names
 
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -156,7 +156,7 @@ layout my_layout
       \edef\nostring{}            % empty string
       \ifx\temp\nostring          % Réseau_Bovinant if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={Réseau_Bovinant} 		
+         \cavename={Réseau Bovinant} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
       \newtoks\club \club={GUCEM}
@@ -289,7 +289,7 @@ layout my_layout-coupe
       \edef\nostring{}            % empty string
       \ifx\temp\nostring          % Réseau_Bovinant if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={Réseau_Bovinant} 		
+         \cavename={Réseau Bovinant} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
       \newtoks\club \club={GUCEM}
