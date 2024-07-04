@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2024 Clan des Tritons / Alexandre Pont <alexandre_pont***@***yahoo.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+survey Grotte_du_cure -title "Grotte du Curé (38 - Chartreuse)"
+	
+	input Data/Grotte_du_cure.th
+	
+	# Import du dessin en plan
+	input Data/Grotte_du_cure.th2
+	
+	# Import du dessin en coupen
+	input Data/Grotte_du_cure-coupe.th2
+	
+	# Import des maps
+	input Grotte_du_cure-maps.th
+	
+endsurvey
