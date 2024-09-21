@@ -682,7 +682,7 @@ layout drawingconfig
 		#<fr> Pour définir une nouvelle flèche du nord
 		def s_northarrow (expr rot) =
 			begingroup
-				interim defaultscale:=0.7; % scale your north arrow here
+				interim defaultscale:=1.5; % scale your north arrow here
 				#interim defaultscale:=0.5; % scale your north arrow here; 0.5 is the best value for atlas
 				T:=identity scaled defaultscale rotated -rot;
 				interim linecap:=squared;
@@ -696,6 +696,7 @@ layout drawingconfig
 				label.rt(thTEX("mg") scaled 1.6, (.6cm,-1.6cm)) transformed T;
 			endgroup;
 		enddef;
+
 
 #		#<en> Change Scale bar type
 #	 	#<fr> Pour modifier la barre d'échelle
@@ -860,49 +861,49 @@ layout drawingconfig
 		#	  ATTENTION ! Parfois, cette redéfinition génère des erreurs métapost.
 		#		Si c'est le cas, commenter toute la redéfinition du point p_wallaltitude.
 		
-		def p_wallaltitude (expr pprev,pos,pnext,txt) =
-			rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
-			pickup PenD;
-			pair zz;
-			%zz:=(pos + 3*unitvector(dir rot));
-			zz:=(pos + (u/4)*unitvector(dir rot));
-			%draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
-			draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
-			% add the unit (here, meters as m)
-			txtm:=image(
-					%draw txt; % altitude in black
-					draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
-					%interim labeloffset:=0;
-					%label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
-					label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
-				);
-			begingroup 
-				%    interim labeloffset:=2pt;
-				interim labeloffset:=(u/12);
-				if horiz_labels:
-					rot:=rot mod 360;
-					if rot<=22.5: lab:=thelabel.rt(txtm, zz);
-					elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
-					elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
-					elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
-					elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
-					elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
-					elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
-					elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
-					else: lab:=thelabel.rt(txtm, zz);
-					fi;
-				else:
-					if (abs rot>90) and (abs rot <=270):
-						rot:=rot-180;
-						lab:=thelabel.lft(txtm, pos);
-					else:
-						lab:=thelabel.rt(txtm, pos);
-						fi;
-				fi;
-				process_label(pos, if horiz_labels: 0 else: rot fi);		
-			endgroup;
-		enddef;
-		
+#		def p_wallaltitude (expr pprev,pos,pnext,txt) =
+#			rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
+#			pickup PenD;
+#			pair zz;
+#			%zz:=(pos + 3*unitvector(dir rot));
+#			zz:=(pos + (u/4)*unitvector(dir rot));
+#			%draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
+#			draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
+#			% add the unit (here, meters as m)
+#			txtm:=image(
+#					%draw txt; % altitude in black
+#					draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
+#					%interim labeloffset:=0;
+#					%label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
+#					label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
+#				);
+#			begingroup 
+#				%    interim labeloffset:=2pt;
+#				interim labeloffset:=(u/12);
+#				if horiz_labels:
+#					rot:=rot mod 360;
+#					if rot<=22.5: lab:=thelabel.rt(txtm, zz);
+#					elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
+#					elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
+#					elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
+#					elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
+#					elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
+#					elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
+#					elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
+#					else: lab:=thelabel.rt(txtm, zz);
+#					fi;
+#				else:
+#					if (abs rot>90) and (abs rot <=270):
+#						rot:=rot-180;
+#						lab:=thelabel.lft(txtm, pos);
+#					else:
+#						lab:=thelabel.rt(txtm, pos);
+#						fi;
+#				fi;
+#				process_label(pos, if horiz_labels: 0 else: rot fi);		
+#			endgroup;
+#		enddef;
+#		
 		
 		
 	#<en> Definition of new lines symbols
@@ -1517,15 +1518,15 @@ layout scalebar_horiz
 			endfor;
 			
 			begingroup
-				interim labeloffset:=3.5bp;
+				interim labeloffset:=6bp;
 				for i:=0 step (l/5) until (l-1):
 					tmpx:=tmpl * (i * 2 / l - 1);
-					label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+					label.bot(thTEX(decimal (i)) scaled 2,(tmpx,-tmph));
 				endfor;
-				label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+				label.bot(thTEX(decimal (l) & "\thinspace" & txt) scaled 2,(tmpl,-tmph));
 				%<en> To write the scale "1:scale" uncomment it the next line:
 				%<fr> Pour écrire l'échelle "1:scale" au dessus de la barre décommenter la ligne suivante :
-				%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
+				%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)) scaled 2,(0,1));
 			endgroup;
 		enddef;
 	endcode
@@ -1617,7 +1618,7 @@ layout scalebar_vert
 				interim warningcheck:=0;
 				tmpl:=l / Scale * cm * units / 2;
 				tmpx:=l / Scale * cm * units / 5;
-				tmph:=5bp; % bar height
+				tmph:=10bp; % bar height
 				% To compute the right size of the text
 				if (l/1000) <1 :
 					if (l/100) <1 :
@@ -1636,12 +1637,12 @@ layout scalebar_vert
 				interim labeloffset:=0bp;
 				for i:=0 step (l/5) until (l-1):
 					tmpx:=tmpl * (i * 2 / l - 1);
-					label.bot(thTEX(decimal (l-i)),(tmph+tmphz,tmpx));
+					label.bot(thTEX(decimal (l-i)) scaled 2,(tmph+tmphz,tmpx));
 					%label.bot(thTEX(decimal (i)),(tmpx,-tmph)) rotated 90;
 					% Inverser l'ordre des nombres
 				endfor;
-				label.bot(thTEX(decimal (l-l) & "\thinspace" & txt),(tmph+tmphz,tmpl));
-				%label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph)) rotated 90;
+				label.bot(thTEX(decimal (l-l) & "\thinspace" & txt) scaled 2,(tmph+tmphz,tmpl));
+				%label.bot(thTEX(decimal (l) & "\thinspace" & txt) scaled 2,(tmpl,-tmph)) rotated 90;
 			endgroup;
 		enddef;
 	endcode
@@ -1666,7 +1667,7 @@ layout headerl
 		\legendcontent={%
 			\hsize=\legendwidth
 			\color[0 0 0]\the\legendtextcolor
-			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			\ifnortharrow\vbox to 0pt{\line{\hfill\northarrow}\vss}\fi
 			%print cave map name
 			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
 				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
@@ -1678,9 +1679,10 @@ layout headerl
 			\fi}
 			%print scalebar
 			\ifscalebar\scalebar\vskip1cm\fi
+		
 		%print entrances coordinates (Lat-Long/WGS84) if defined
 		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
+			{\the\legendtextsize\si\the\thcoords: \par\the\ECoordinates\par}
 			\vskip0.5cm
 		\fi
 
@@ -1834,7 +1836,7 @@ layout header_coupe_vert-to-place
 		{
 		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
 		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
+			{\the\legendtextsize\si\the\thcoords: \the\ECoordinates\par}
 			\vskip0.5cm
 		\fi
 		%print cavelength and depth
@@ -2019,6 +2021,112 @@ layout header_coupe_vert-auto
 endlayout
 
 #------------------------------
+layout header_coupe_small
+#<en> Layout to change the header (extended elevation)
+#     This code is experimental redefinition of map header
+#     Bruce Mutton           Therion 5.3.15 make use of new variables
+#<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
+#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
+#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+
+	#copy scalebar_horiz
+ 	copy scalebar_vert
+	
+	#<en> This one affects maps only (extended view)
+	#<fr> Ceci ne touche que les maps (coupes développées)
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			\ifscalebar\scalebar\vskip1cm\fi
+			%\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+			#	{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			
+		{
+		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
+		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
+			\vskip0.5cm
+		\fi
+		%print cavelength and depth
+		#\everypar{\hangindent=2em\hangafter=1}
+		#\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		#\fi
+		#\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		#\fi
+		# % end bruces addition
+
+		%print explorers names
+		#\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		#\fi
+		#%print surveyors names
+		#\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		#\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		#\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		#\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		#\edef\tmp{\the\club} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		#\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		
+		\bigskip
+		\edef\tmp{\the\thanksto} \ifx\tmp\empty \else
+				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
+				%\def\ththankstotitle{Nos remerciements : }
+				%{\everypar{\hangindent=7.2em\hangafter=1}
+				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+	endcode
+endlayout
+#------------------------------
 layout header_coupe
 #<en> Layout to change the header (extended elevation)
 #     This code is experimental redefinition of map header
@@ -2061,7 +2169,7 @@ layout header_coupe
 		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
 		\fi
-		# % end bruces addition
+		% end bruces addition
 
 		%print explorers names
 		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
@@ -2122,7 +2230,6 @@ layout header_coupe
 		}
 	endcode
 endlayout
-
 #------------------------------
 layout headeratlas
 #<en> Layout to change the header (plan projection)
@@ -2385,7 +2492,7 @@ layout AtlasSetUp
 	
 	#<en> Print (or not) the title of the pages before each capter of the Atlas
 	#<fr> Affiche (ou non) le titre des pages avant chaque chapitre de l’atlas
-	title-pages on
+	title-pages off
 	
 	#<en> Zoom factor of the navigation pannel; by default, 30
 	#<fr> Facteur de zoom du panneau de navigation ; Par défault, 30
@@ -2419,7 +2526,7 @@ layout layoutcontinuation
 				% set labeling color to light orange
 				push_label_fill_color(1.0, 0.9, 0.8);
 				% draw filled label with text next to ?
-				p_label.urt(ATTR__text,(.5u,-.25u) transformed T,0.0,8);
+				p_label.bot(ATTR_code,pos shifted (0,-0.5u),0.0,8);
 				% restore original labeling color
 				pop_label_fill_color;
 			fi;
@@ -2438,8 +2545,8 @@ layout northarrowMG
 	  	# If you want to get both, magnetic and geographic north,
   		# with \cartodate ?
 		def s_northarrow (expr rot) =
-			%valscal=1.2; % scale your north arrow here
-			valscal=0.7; % scale your north arrow here
+			valscal=1.2; % scale your north arrow here
+			%valscal=0.7; % scale your north arrow here
 			decl:=MagDecl; % set the magnetic declination
 			T:=identity;
 			picture tmp_pic;
@@ -2570,4 +2677,19 @@ layout test
 
 	endcode
 
+endlayout
+
+layout for_print
+	code metapost
+      fonts_setup( 16, 18, 20, 22, 24 );
+    endcode
+
+	
+
+  code tex-map
+    \legendwidth=60cm
+    \legendtextcolor={\color[0 0 0]}  % RGB values 0--100
+    \legendtextsize={\size[20]}
+    \legendtextheadersize={\size[30]}
+  endcode
 endlayout

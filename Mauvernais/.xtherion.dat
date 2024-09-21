@@ -1,0 +1,15 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 809.89m (surface 0.00m, duplicated 0.00m)\nvertical range: 239.79m (from 0@mauvernais.Mauvernais at 175.36m to M2.1@mauvernais2.Mauvernais at -64.43m)\nnorth-south range: 138.55m (from M2.16@mauvernais2.Mauvernais at 104.43m to 0@mauvernais.Mauvernais at -34.12m)\neast-west range: 335.41m (from M2.21@mauvernais2.Mauvernais at 133.55m to 0@mauvernais.Mauvernais at -201.86m)\nnumber of shots: 1578\nnumber of stations: 1580"
+xth_cp_data_tree_insert 47 1 1 Mauvernais Mauvernais "Mauvernais" "Mauvernais" "length: 809.89m (surface 0.00m, duplicated 0.00m)\nvertical range: 239.79m (from 0@mauvernais.Mauvernais at 175.36m to M2.1@mauvernais2.Mauvernais at -64.43m)\nnorth-south range: 138.55m (from M2.16@mauvernais2.Mauvernais at 104.43m to 0@mauvernais.Mauvernais at -34.12m)\neast-west range: 335.41m (from M2.21@mauvernais2.Mauvernais at 133.55m to 0@mauvernais.Mauvernais at -201.86m)\nnumber of shots: 1578\nnumber of stations: 1580"
+xth_cp_data_tree_insert 49 47 2 mauvernais mauvernais.Mauvernais "mauvernais" "mauvernais" "length: 435.51m (surface 0.00m, duplicated 0.00m)\nvertical range: 175.36m (from 0@mauvernais.Mauvernais at 175.36m to 96@mauvernais.Mauvernais at 0.00m)\nnorth-south range: 56.82m (from 70@mauvernais.Mauvernais at 22.70m to 0@mauvernais.Mauvernais at -34.12m)\neast-west range: 201.86m (from 96@mauvernais.Mauvernais at 0.00m to 0@mauvernais.Mauvernais at -201.86m)\nnumber of shots: 886\nnumber of stations: 887"
+xth_cp_data_tree_insert 53 47 2 mauvernais2 mauvernais2.Mauvernais "mauvernais2" "mauvernais2" "length: 332.84m (surface 0.00m, duplicated 0.00m)\nvertical range: 68.23m (from M2.83@mauvernais2.Mauvernais at 3.80m to M2.1@mauvernais2.Mauvernais at -64.43m)\nnorth-south range: 105.87m (from M2.16@mauvernais2.Mauvernais at 104.43m to M2.75@mauvernais2.Mauvernais at -1.44m)\neast-west range: 133.55m (from M2.21@mauvernais2.Mauvernais at 133.55m to M2.87@mauvernais2.Mauvernais at 0.00m)\nnumber of shots: 630\nnumber of stations: 630"
+xth_cp_data_tree_insert 57 47 2 ricohplouf ricohplouf.Mauvernais "ricohplouf" "ricohplouf" "length: 41.54m (surface 0.00m, duplicated 0.00m)\nvertical range: 5.72m (from 0@ricohplouf.Mauvernais at -19.68m to 6@ricohplouf.Mauvernais at -25.40m)\nnorth-south range: 30.02m (from 6@ricohplouf.Mauvernais at 22.31m to 0@ricohplouf.Mauvernais at -7.71m)\neast-west range: 13.94m (from 1@ricohplouf.Mauvernais at 74.53m to 6@ricohplouf.Mauvernais at 60.59m)\nnumber of shots: 62\nnumber of stations: 63"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert projection 0 p2 {} 0 elevation\[17.0\] {} {} {}
+xth_cp_map_tree_create
+xth_cp_comp_stat 810 0
+set xth(th_exit_state) 1
+set xth(th_exit_number) 1726724083
+

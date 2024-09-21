@@ -1,0 +1,189 @@
+encoding utf-8
+##XTHERION## xth_me_area_adjust 1876.0 -1288.9 2614.1 -496.6
+##XTHERION## xth_me_area_zoom_to 25
+
+# 2024.09.16 created by TopoDroid v. 6.2.13
+
+scrap mauvernais-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
+  1976.04 -1097.99
+  2010.55 -1080.42
+  2048.75 -1070.71
+  2089.57 -1078.89
+  2134.61 -1101.35
+  2158.31 -1114.51
+  2192.67 -1135.57
+  2220.50 -1152.55
+  2245.42 -1163.61
+  2281.12 -1172.03
+  2309.33 -1175.93
+  2336.77 -1181.12
+  2364.14 -1188.92
+endline
+
+line wall
+  2497.83 -1101.89
+  2461.03 -1101.89
+  2426.31 -1104.53
+  2391.65 -1112.63
+  2381.01 -1134.78
+  2392.69 -1148.65
+endline
+
+line wall
+  2475.76 -1021.36
+  2450.99 -1038.35
+  2418.02 -1062.70
+  2392.93 -1076.62
+  2358.67 -1090.77
+  2328.95 -1079.66
+  2311.75 -1040.75
+  2307.02 -1007.86
+  2318.86 -971.84
+  2327.79 -943.44
+  2323.40 -911.25
+  2308.32 -887.93
+  2294.45 -863.70
+  2277.18 -831.73
+  2263.74 -803.98
+  2245.78 -784.95
+  2227.25 -762.27
+  2207.06 -736.85
+  2194.94 -712.13
+  2182.14 -678.90
+  2175.06 -651.58
+  2165.54 -621.28
+endline
+
+line wall
+  2099.35 -668.04
+  2105.45 -698.98
+  2123.74 -738.81
+  2134.50 -777.60
+  2147.15 -816.22
+  2156.09 -864.57
+  2160.35 -896.79
+  2160.35 -924.84
+  2160.35 -956.49
+  2160.85 -989.17
+  2148.82 -1023.81
+  2127.40 -1043.44
+  2087.52 -1036.03
+  2056.00 -1017.85
+  2023.51 -989.90
+endline
+
+point 2107.13 -596.60 continuation
+
+point 2512.11 -1051.23 continuation
+
+
+line u:splay -visibility off
+  1903.27 -1082.74
+  2013.75 -1004.45
+endline
+line u:splay -visibility off
+  1903.27 -1082.74
+  2029.34 -1239.79
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  2014.92 -935.74
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  2067.68 -1018.68
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  2034.66 -1015.71
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  2017.90 -1003.20
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  2073.52 -1059.31
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  1913.82 -1146.26
+endline
+line u:splay -visibility off
+  2017.90 -1027.15
+  1978.06 -1091.02
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2262.83 -1072.56
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2262.83 -970.83
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2262.83 -1077.99
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2155.62 -665.12
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2275.75 -899.90
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2127.99 -719.52
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2262.83 -801.85
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2226.99 -1136.34
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2174.86 -1128.97
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2354.62 -1125.12
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2491.06 -1072.02
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2336.67 -1107.66
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2314.32 -1105.44
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2330.10 -913.17
+endline
+line u:splay -visibility off
+  2262.83 -1143.75
+  2196.09 -965.16
+endline
+line u:splay -visibility off
+  2266.04 -1818.56
+  2239.65 -1057.58
+endline
+
+point 2017.90 -1027.15 station -name "30"
+point 2262.83 -1143.75 station -name "31"
+point 2484.05 -1071.62 station -name "32"
+
+
+endscrap
+

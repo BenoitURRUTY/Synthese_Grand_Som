@@ -1,0 +1,103 @@
+# 2024.09.18 created by TopoDroid v 6.2.44
+
+survey escalade-arlesienne -title "escalade-arlesienne"
+
+  centerline
+    date 2024.09.17 
+    # team Maxime 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend left
+    Esc-Ar.0 Esc-Ar.1 31.39 306.6 36.9
+    # extend auto
+    Esc-Ar.1 . 3.76 195.9 27.5
+    Esc-Ar.1 . 2.74 144.4 69.0
+    Esc-Ar.1 . 4.30 14.6 18.7
+    Esc-Ar.1 . 0.15 276.2 -46.9
+    Esc-Ar.1 . 12.36 314.5 36.6
+    Esc-Ar.1 . 12.92 314.2 36.4
+    Esc-Ar.1 . 12.45 314.2 36.5
+    Esc-Ar.1 . 5.52 213.7 12.9
+    Esc-Ar.1 . 3.38 225.7 -27.5
+    Esc-Ar.1 . 0.23 326.8 -46.1
+    Esc-Ar.1 . 0.37 203.1 24.6
+    Esc-Ar.1 . 10.34 295.7 30.5
+    Esc-Ar.1 . 10.26 141.2 -36.7
+    extend left
+    Esc-Ar.1 Esc-Ar.2 5.66 285.2 22.7
+    # extend auto
+    Esc-Ar.2 . 2.14 226.2 34.1
+    Esc-Ar.2 . 1.16 89.7 81.9
+    Esc-Ar.2 . 3.37 64.2 -6.0
+    Esc-Ar.2 . 2.07 75.4 18.5
+    Esc-Ar.2 . 8.11 349.0 85.8
+    Esc-Ar.2 . 6.80 16.5 9.6
+    Esc-Ar.2 . 7.68 16.2 8.8
+    Esc-Ar.2 . 6.80 16.8 9.9
+    extend left
+    Esc-Ar.2 Esc-Ar.3 5.73 287.4 14.2
+    # extend auto
+    Esc-Ar.3 . 1.55 336.4 -73.1
+    Esc-Ar.3 . 4.52 228.3 40.9
+    Esc-Ar.3 . 4.52 21.7 17.5
+    Esc-Ar.3 . 0.39 17.6 -1.5
+    Esc-Ar.3 . 0.21 193.8 4.9
+    Esc-Ar.3 . 24.42 2.9 86.1
+    extend left
+    Esc-Ar.3 Esc-Ar.4 7.70 308.9 38.7
+    # extend auto
+    Esc-Ar.4 . 4.49 21.4 2.0
+    Esc-Ar.4 . 1.29 45.6 26.7
+    Esc-Ar.4 . 2.11 78.7 57.3
+    Esc-Ar.4 . 18.27 38.6 85.1
+    Esc-Ar.4 . 1.78 167.5 60.9
+    Esc-Ar.4 . 4.86 204.4 16.4
+    Esc-Ar.4 . 2.13 214.1 -8.0
+    Esc-Ar.4 . 2.32 253.9 -57.0
+    Esc-Ar.4 . 14.95 279.5 32.0
+    Esc-Ar.4 . 9.86 97.9 -32.4
+    Esc-Ar.4 . 13.94 117.7 -30.4
+    Esc-Ar.4 . 8.44 161.0 -15.3
+    Esc-Ar.4 . 2.92 304.1 55.4
+    Esc-Ar.4 . 2.96 304.7 56.0
+    Esc-Ar.4 . 16.53 89.3 83.4
+    Esc-Ar.4 . 2.61 20.9 28.4
+    Esc-Ar.4 . 12.81 122.4 26.6
+    Esc-Ar.4 . 12.22 118.6 44.7
+    Esc-Ar.4 . 8.52 119.8 13.7
+    Esc-Ar.4 . 7.82 122.5 13.8
+    Esc-Ar.4 . 7.56 124.8 -17.3
+    Esc-Ar.4 . 0.46 218.6 9.3
+    Esc-Ar.4 . 2.36 253.0 79.5
+    Esc-Ar.4 . 2.72 102.4 -13.5
+    Esc-Ar.4 . 3.05 114.8 13.6
+    Esc-Ar.4 . 10.24 284.5 17.0
+    Esc-Ar.4 . 4.54 291.9 39.1
+    extend left
+    Esc-Ar.4 Esc-Ar.5 9.90 285.3 17.7
+    # extend auto
+    Esc-Ar.5 . 3.33 275.6 46.2
+    Esc-Ar.5 . 1.50 221.0 80.8
+    Esc-Ar.5 . 0.24 348.3 -56.2
+    Esc-Ar.5 . 6.00 93.9 -5.5
+    Esc-Ar.5 . 4.33 95.8 31.1
+    Esc-Ar.5 . 4.31 82.3 50.1
+    extend left
+    Esc-Ar.5 Esc-Ar.6 3.39 32.6 40.0
+    # extend auto
+    Esc-Ar.6 . 3.95 337.8 7.9
+    Esc-Ar.6 . 2.81 292.5 1.8
+    Esc-Ar.6 . 3.59 229.0 -17.0
+    Esc-Ar.6 . 2.92 162.5 -9.1
+    Esc-Ar.6 . 9.10 19.9 84.3
+    Esc-Ar.6 . 7.74 339.0 84.8
+    Esc-Ar.6 . 3.31 169.7 63.1
+    Esc-Ar.6 . 3.04 170.8 -13.9
+    Esc-Ar.6 . 3.82 232.0 -11.4
+    Esc-Ar.6 . 1.47 249.3 9.8
+    Esc-Ar.6 . 2.30 259.3 54.1
+    Esc-Ar.6 . 2.68 289.0 -6.9
+  endcenterline
+
+endsurvey
