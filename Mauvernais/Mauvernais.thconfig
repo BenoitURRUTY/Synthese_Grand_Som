@@ -2,7 +2,7 @@ encoding  utf-8
 
 # 1-SOURCES 
 
-source Mauvernais-tot.th
+source mauvernais-tot.th
 
 # Add entrances coordinates
 # input legendes/entrances_coordinates.th
@@ -290,8 +290,8 @@ export map -proj extended -layout xviexport -fmt xvi -o Data/Mauvernais-coupe.xv
 # export map -proj [elevation 17] -layout xviexport -fmt xvi -o Data/Mauvernais-coupe-elevation.xvi 
 
 # Select maps
-select MP-Mauvernais-plan-tot@Mauvernais
-select MC-Mauvernais-coupe-tot@Mauvernais
+#select MP-Mauvernais-plan-tot@Mauvernais
+#select MC-Mauvernais-coupe-tot@Mauvernais
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/Mauvernais-coupe.pdf 
 export map -o Outputs/Mauvernais-plan.pdf -layout my_layout
