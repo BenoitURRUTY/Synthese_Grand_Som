@@ -1,0 +1,29 @@
+encoding  utf-8
+
+# Copyright (C) 2024 Clan des Tritons / Alexandre Pont <alexandre_pont***@***yahoo.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+map MP-Grotte_du_cure -title "Grotte du Curé"
+	SP-Grotte_du_cure_01
+	break
+	SP-Grotte_du_cure_02
+	break
+	SP-Grotte_du_cure_03
+	break
+	SP-Grotte_du_cure_04
+	break
+	
+endmap
+
+map MC-Grotte_du_cure -title "Grotte du Curé"
+	SC-Grotte_du_cure_01
+	break
+	SC-Grotte_du_cure_02
+	break
+	SC-Grotte_du_cure_03
+	break
+	SC-Grotte_du_cure_04
+	break
+endmap
+
