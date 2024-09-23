@@ -4,9 +4,10 @@ survey mauvernais -title "mauvernais"
 
   centerline
     date 2024.09.16 
-    # team Benoît Océane 
-    cs long-lat
-    fix 0  5.806323 45.374821 1754
+    team "Benoît"
+    team "Océane"
+    cs EPSG:2154
+    fix 0 919608 6478955 1772
 
     units length meters
     units compass clino degrees

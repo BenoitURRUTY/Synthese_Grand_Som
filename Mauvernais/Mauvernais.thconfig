@@ -298,6 +298,7 @@ export map -o Outputs/Mauvernais-plan.pdf -layout my_layout
  
 export model -o Outputs/Mauvernais.lox
   export model -o Outputs/Mauvernais-model.kml
+  export model -o Outputs/Mauvernais-model -fmt esri
 
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/Mauvernais -layout my_layout

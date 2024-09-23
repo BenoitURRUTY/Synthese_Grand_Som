@@ -5,6 +5,8 @@ survey point_4 -title "point 4"
   centerline
     date 2024.09.17 
     # team Benoît Urruty 
+    cs EPSG:2154
+    fix 5 920274 6479643 1824
     units length meters
     units compass clino degrees
     data normal from to length compass clino

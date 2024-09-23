@@ -2,13 +2,13 @@ encoding  utf-8
 
 # 1-SOURCES 
 
-source Arlesienne-tot.th
+source Grand-Som-tot.th
 
 # Add entrances coordinates
 # input legendes/entrances_coordinates.th
 
 # Add config file
-input ../config.thc 
+input config.thc 
   
 # 2-LAYOUT   
 
@@ -31,7 +31,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr
    # Titre  
-   doc-title "Arlesienne"
+   doc-title "Grand-Som"
    # Auteur
    doc-author "Benoît Urruty"
   
@@ -144,14 +144,14 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Arlesienne} 		
+			\cavename={Grand Som} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={GUCEM}
 	endcode  
 
 # add extended-elev on the same pdf
-# map-image 105 -100 sw Outputs/Arlesienne-coupe.pdf
+# map-image 105 -100 sw Outputs/Grand-Som-coupe.pdf
 
 endlayout
 
@@ -164,7 +164,7 @@ layout my_layout-coupe
 	copy langue-fr
 	  
    # Titre  
-   doc-title "Arlesienne"
+   doc-title "Grand-Som"
    # Auteur
    doc-author "Benoit Urruty"
   
@@ -275,7 +275,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Arlesienne} 		
+			\cavename={Grand Som} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={GUCEM}
@@ -285,23 +285,22 @@ endlayout
 
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Data/Arlesienne-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/Arlesienne-coupe.xvi
-# export map -proj [elevation 17] -layout xviexport -fmt xvi -o Data/Arlesienne-coupe-elevation.xvi 
+export map -fmt xvi -layout xviexport -o Data/Grand-Som-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Grand-Som-coupe.xvi
 
 # Select maps
-# select MP-Arlesienne-plan-tot@Arlesienne
-# select MC-Arlesienne-coupe-tot@Arlesienne
+#select MP-Grand-Som-plan-tot@Grand-Som
+#select MC-Grand-Som-coupe-tot@Grand-Som
 	 
-export map -projection extended -layout my_layout-coupe -o Outputs/Arlesienne-coupe.pdf 
-export map -o Outputs/Arlesienne-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/Grand-Som-coupe.pdf 
+#export map -o Outputs/Grand-Som-plan.pdf -layout my_layout
  
-export model -o Outputs/Arlesienne.lox
-export model -o Outputs/Arlesienne-model.kml
-export model -o Outputs/Arlesienne-model -fmt esri
+export model -o Outputs/Grand-Som.lox
+  export model -o Outputs/Grand-Som-model.kml
+  export model -o Outputs/Grand-Som-model -fmt esri
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/Arlesienne -layout my_layout
+export map -proj plan -fmt esri -o Outputs/Grand-Som -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/Arlesienne.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/Grand-Som.kml -layout my_layout

@@ -1,0 +1,6 @@
+# created by TopoDroid Manager 6.2.44 - 2024.09.20
+  survey "Grand_Som"
+    input Mauvernais/mauvernais-tot.th
+    input Arlesienne/Arlesienne-tot.th
+    input Puits_neige/Puits_neige-tot.th
+  endsurvey
