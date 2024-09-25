@@ -1,0 +1,10 @@
+survey
+centerline
+cs long-lat
+
+fix XXX 5.58177153835219 45.023014568487 1762
+station XXX  "Name" entrance
+
+
+endcenterline
+endsurvey
