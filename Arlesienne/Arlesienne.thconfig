@@ -115,8 +115,8 @@ layout my_layout
   
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-  # symbol-hide line survey
-  debug station-names
+   symbol-hide line survey
+  #debug station-names
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -226,7 +226,7 @@ layout my_layout-coupe
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-  legend off
+  legend on
   
    # Par defaut, la legende est de 14 cm de largeur
 	legend-width 14.5 cm
@@ -239,7 +239,7 @@ layout my_layout-coupe
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
   #map-header 0 00 nw
-  map-header 0 00 off
+  map-header 0 -7 nw
   
    # arrière plan de la manchette
   map-header-bg off
@@ -248,8 +248,8 @@ layout my_layout-coupe
   
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-  # symbol-hide line survey
-  debug station-names
+   symbol-hide line survey
+  #debug station-names
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  

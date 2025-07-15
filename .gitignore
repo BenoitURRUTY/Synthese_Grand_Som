@@ -3,7 +3,10 @@
 
 #ignorer DEM
 *.asc
+*.laz
 
+./SIG/qgis2web*
+./SIG/BIG
 #ignorer geoTIFF
 *.tif
 *.xvi

@@ -1,13 +1,22 @@
 encoding  utf-8
 
-map MP-Aura-plan-tot -title "Aura"
-    SP-aura-1
+map MP-Arl-plan-tot -title "Arlésienne"
+    SP-Arl-0
     break
-    SP-aura-2
+    SP-Arl-1
     break
-    SP-aura-3
+    SP-Arl-2
+    break
+    SP-Arl-3
 endmap
 
-map MC-Aura-coupe-tot -title "Aura"
-    SC-aura-1
+map MC-Arl-coupe-tot -title "Arlésienne"
+    SC-Arl-1
+    break
+    SC-Arl-2
+    break
+    SC-Arl-3
+    break
+    SC-Arl-4
+    break
 endmap

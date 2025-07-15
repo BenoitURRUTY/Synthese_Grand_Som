@@ -1,10 +1,15 @@
 # created by TopoDroid Manager 6.2.44 - 2024.09.20
-  survey "mauvernais"
+  survey mauvernais
     input "Principal/Data/mauvernais.th"
     input "Shunt/Data/mauvernais-shunt.th"
     input "Principal/Data/mauvernais2.th"
     input "Affluent_Ricohplouf/Data/ricoh2.th"
     input "Affluent_Ricohplouf/Data/ricohplouf.th"
+    input Data/Plan_mauvernais.th2
+    input Data/Coupe_mauvernais.th2
+
+    input Mauvernais-maps.th
+    
     equate "96@mauvernais" "M2.87@mauvernais2"
     equate "PTR4@mauvernais2" "PTR4@ricohplouf"
     equate "96@mauvernais" "69@mauvernais-shunt"

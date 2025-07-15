@@ -1,13 +1,57 @@
 encoding  utf-8
 
-map MP-Aura-plan-tot -title "Aura"
-    SP-aura-1
-    break
-    SP-aura-2
-    break
-    SP-aura-3
+map MP-allcave
+MP-Mauvernais-plan-tot
+break
+mauvernais
+mauvernais2
+ricohplouf
+mauvernais-shunt
+ricoh2
+break
 endmap
 
-map MC-Aura-coupe-tot -title "Aura"
-    SC-aura-1
+map MP-Mauvernais-plan-tot -title "Mauvernais"
+    SP-Mauvernais-1
+    break
+    SP-Mauvernais-2
+    break
+    SP-Mauvernais-10
+    break
+    SP-Mauvernais-11
+    break
+    
+    SP-Mauvernais-3
+    break
+    SP-Mauvernais-5
+    break
+    SP-Mauvernais-4
+    break
+    SP-Mauvernais-6
+    break
+    SP-Mauvernais-7
+    break
+    SP-Mauvernais-8
+    break
+    SP-Mauvernais-9
+    
+endmap
+
+map MC-allcave
+MC-Mauvernais-coupe-tot
+break
+mauvernais
+mauvernais2
+ricohplouf
+mauvernais-shunt
+ricoh2
+break
+endmap
+
+map MC-Mauvernais-coupe-tot -title "Mauvernais"
+    SC-Mauvernais-1
+    break
+    SC-Mauvernais-2
+    break
+    SC-Mauvernais-3
 endmap

@@ -31,7 +31,7 @@ source Grotte_du_cure-tot.th
 #source Data/DEM-Geophy.th
 
 # Add Coordinates
-input legendes/entrances_coordinates.th
+input Legendes/entrances_coordinates.th
 
 # Add config file
 input config.thc
@@ -177,7 +177,7 @@ layout my_layout
 	endcode
 	
 	## add extended-elev on the same pdf
-	map-image 0 -60 sw Outputs/Grotte_du_cure-coupe.pdf
+	# map-image 0 -60 sw Outputs/Grotte_du_cure-coupe.pdf
 	
 	# Add logos to the map
 	# Ajout des logos du club
@@ -340,8 +340,8 @@ select MC-Grotte_du_cure@Grotte_du_cure
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Grotte_du_cure-coupe.pdf
 export map -proj plan -fmt pdf -o Outputs/Grotte_du_cure-plan.pdf -layout my_layout
-export map -proj plan -fmt svg -o Outputs/Grotte_du_cure-plan.svg -layout my_layout
-export map -proj plan -fmt svg -o Outputs/Grotte_du_cure-plan.png -layout my_layout
+# export map -proj plan -fmt svg -o Outputs/Grotte_du_cure-plan.svg -layout my_layout
+# export map -proj plan -fmt svg -o Outputs/Grotte_du_cure-plan.png -layout my_layout
 
 # Export du fichier 3d pour Loch
 export model -enable all -o Outputs/Grotte_du_cure.lox

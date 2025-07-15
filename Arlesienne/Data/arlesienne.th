@@ -6,7 +6,7 @@ survey arlesienne -title "arlesienne"
     cs long-lat
     fix AR.0 5.808612 45.376923 1710 # 2.3 23.1
     date 2024.09.14 
-    # team Benoît Urruty 
+    team "Benoît Urruty" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -258,7 +258,7 @@ survey arlesienne -title "arlesienne"
     AR.21 . 1.10 311.2 79.7
     AR.21 . 1.43 264.2 -77.4
     AR.21 . 1.20 38.8 8.1
-    extend right
+    extend left
     AR.21 AR.22 2.04 259.3 -20.7
     # extend auto
     AR.22 . 0.71 136.7 3.6

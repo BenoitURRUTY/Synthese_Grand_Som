@@ -4,7 +4,8 @@ survey ricohplouf -title "ricohplouf"
 
   centerline
     date 2024.09.18 
-    # team Benoît Urruty 
+    team "Benoît Urruty"
+    team "Jean-Baptiste Jacob" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -30,6 +30,8 @@ layout my_layout
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
+	
+	# debug on
    # Titre  
    doc-title "Mauvernais"
    # Auteur
@@ -37,7 +39,7 @@ layout my_layout
   
    # Pour faire la topo dans le system UTM  
    # Decommenter la ligne, et remplacer xx par la zone UTM
-   cs UTM32
+   cs EPSG:2154
   
    # "base-scale" specifie l echelle auquel nous avons
    # dessine nos croquis. Par defaut, c est 1/200.
@@ -117,7 +119,7 @@ layout my_layout
    # les points et le nom des stations topos
   # symbol-hide line survey
   debug station-names
-  
+  # debug scrap-names
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
  # grid bottom
@@ -290,8 +292,8 @@ export map -proj extended -layout xviexport -fmt xvi -o Data/Mauvernais-coupe.xv
 # export map -proj [elevation 17] -layout xviexport -fmt xvi -o Data/Mauvernais-coupe-elevation.xvi 
 
 # Select maps
-#select MP-Mauvernais-plan-tot@Mauvernais
-#select MC-Mauvernais-coupe-tot@Mauvernais
+select MP-allcave@mauvernais
+select MC-allcave@mauvernais
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/Mauvernais-coupe.pdf 
 export map -o Outputs/Mauvernais-plan.pdf -layout my_layout

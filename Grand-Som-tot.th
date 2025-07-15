@@ -3,5 +3,6 @@
     input Mauvernais/mauvernais-tot.th
     input Arlesienne/Arlesienne-tot.th
     input Puits_neige/Puits_neige-tot.th
+    input Grotte_falaise/Grotte-Falaise-tot.th
     # input Prospection/Prospection.th
   endsurvey

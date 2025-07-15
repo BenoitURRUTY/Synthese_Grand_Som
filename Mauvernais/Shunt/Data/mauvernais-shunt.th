@@ -4,7 +4,7 @@ survey mauvernais-shunt -title "mauvernais-shunt"
 
   centerline
     date 2024.09.20 
-    # team Benoît Urruty 
+    team "Benoît Urruty" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -179,22 +179,20 @@ survey mauvernais-shunt -title "mauvernais-shunt"
     15 13 4.07 248.9 46.6
     #extend ignore
     15 16 6.09 263.8 44.4
-  # 15
     # #extend auto
-    16 . 0.57 97.8 0.0
-    16 . 1.46 126.6 -6.6
-    16 . 0.53 164.8 2.9
-    16 . 0.75 244.0 11.9
-    16 . 1.23 293.1 5.7
-    16 . 1.01 349.9 2.1
-    16 . 1.02 32.2 -7.2
-    16 . 1.77 263.2 80.7
-    16 . 1.42 285.8 -70.2
-    16 . 2.07 267.3 24.7
-    16 . 1.01 247.7 29.1
-    16 . 0.71 104.7 -15.3
-  # 15
-    16 . 0.90 142.3 -8.8
+    15 . 0.57 97.8 0.0
+    15 . 1.46 126.6 -6.6
+    15 . 0.53 164.8 2.9
+    15 . 0.75 244.0 11.9
+    15 . 1.23 293.1 5.7
+    15 . 1.01 349.9 2.1
+    15 . 1.02 32.2 -7.2
+    15 . 1.77 263.2 80.7
+    15 . 1.42 285.8 -70.2
+    15 . 2.07 267.3 24.7
+    15 . 1.01 247.7 29.1
+    15 . 0.71 104.7 -15.3
+    15 . 0.90 142.3 -8.8
     #extend left
     15 17 1.51 126.7 -13.1
     # #extend auto
@@ -475,10 +473,10 @@ survey mauvernais-shunt -title "mauvernais-shunt"
     50 . 1.47 245.4 29.8
     50 . 2.05 237.5 39.2
     50 . 2.41 182.2 71.5
+    50 . 3.20 276.4 -7.8
     #extend right
     50 51 8.05 338.6 -48.2
     # #extend auto
-    51 . 3.20 276.4 -7.8
     #extend vertical
     34 52 3.20 276.2 -8.0
     # #extend auto
@@ -489,6 +487,15 @@ survey mauvernais-shunt -title "mauvernais-shunt"
     0 . 14.41 291.7 35.8
     0 . 7.26 284.0 79.9
     #extend left
+    endcenterline
+    centerline
+    date 2024.09.20 
+    team "Benoît Urruty" 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    flags duplicate
+        extend left
     0 53 1.89 184.8 -62.5
     # #extend auto
     53 . 8.38 88.6 -76.6

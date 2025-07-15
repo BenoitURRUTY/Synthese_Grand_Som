@@ -2,15 +2,14 @@ encoding  utf-8
 
 # 1-SOURCES 
 
-source Grand-Som-tot.th
-# source SIG/MNT2.th
+source Grotte-Falaise-tot.th
 
 # Add entrances coordinates
 # input legendes/entrances_coordinates.th
 
 # Add config file
-input config.thc 
-
+input ../config.thc 
+  
 # 2-LAYOUT   
 
 layout xviexport
@@ -32,13 +31,13 @@ layout my_layout
 	copy headerl
 	copy langue-fr
    # Titre  
-   doc-title "Grand-Som"
+   doc-title "Grotte-Falaise"
    # Auteur
    doc-author "Benoît Urruty"
   
    # Pour faire la topo dans le system UTM  
    # Decommenter la ligne, et remplacer xx par la zone UTM
-   cs UTM32
+   cs EPSG:2154
   
    # "base-scale" specifie l echelle auquel nous avons
    # dessine nos croquis. Par defaut, c est 1/200.
@@ -145,14 +144,14 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Grand Som} 		
+			\cavename={Grotte Falaise} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={GUCEM}
 	endcode  
 
 # add extended-elev on the same pdf
-# map-image 105 -100 sw Outputs/Grand-Som-coupe.pdf
+# map-image 105 -100 sw Outputs/Grotte-Falaise-coupe.pdf
 
 endlayout
 
@@ -165,7 +164,7 @@ layout my_layout-coupe
 	copy langue-fr
 	  
    # Titre  
-   doc-title "Grand-Som"
+   doc-title "Grotte-Falaise"
    # Auteur
    doc-author "Benoit Urruty"
   
@@ -221,13 +220,13 @@ layout my_layout-coupe
    # si la cavite est importante et qu il y a beaucoup d explorateurs
    statistics explo-length off
    # Afficher developpement et profondeur de la cavite
-  statistics topo-length off
+  statistics topo-length on
   
    # Nous voulons une legende pour expliquer les symboles. "on" imprimera
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-  legend off
+  legend on
   
    # Par defaut, la legende est de 14 cm de largeur
 	legend-width 14.5 cm
@@ -240,7 +239,7 @@ layout my_layout-coupe
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
   #map-header 0 00 nw
-  map-header 0 00 off
+  map-header 0 -7 nw
   
    # arrière plan de la manchette
   map-header-bg off
@@ -276,7 +275,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Grand Som} 		
+			\cavename={Grotte Falaise} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={GUCEM}
@@ -286,22 +285,24 @@ endlayout
 
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Data/Grand-Som-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/Grand-Som-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Grotte-Falaise-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Grotte-Falaise-coupe.xvi
+# export map -proj [elevation 17] -layout xviexport -fmt xvi -o Data/Grotte-Falaise-coupe-elevation.xvi 
 
 # Select maps
-#select MP-Grand-Som-plan-tot@Grand-Som
-#select MC-Grand-Som-coupe-tot@Grand-Som
+select MP-Grotte-Falaise-plan-tot@Grotte-Falaise
+select MC-Grotte-Falaise-coupe-tot@Grotte-Falaise
 	 
-#export map -projection extended -layout my_layout-coupe -o Outputs/Grand-Som-coupe.pdf 
-#export map -o Outputs/Grand-Som-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/Grotte-Falaise-coupe.pdf 
+export map -o Outputs/Grotte-Falaise-plan.pdf -layout my_layout
  
-export model -o Outputs/Grand-Som.lox
-  export model -o Outputs/Grand-Som-model.kml
-  export model -o Outputs/Grand-Som-model -fmt esri
+export model -o Outputs/Grotte-Falaise.lox
+export model -fmt kml -o Outputs/Grotte-Falaise_3d.kml
+export map -proj plan -fmt esri -o Outputs/Grotte-Falaise -layout my_layout
+export model -fmt esri -o Outputs/Grotte-Falaise-3d 
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/Grand-Som -layout my_layout
+export map -proj plan -fmt esri -o Outputs/Grotte-Falaise -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/Grand-Som.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/Grotte-Falaise.kml -layout my_layout
