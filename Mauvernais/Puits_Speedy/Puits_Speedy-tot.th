@@ -1,0 +1,11 @@
+encoding  utf-8
+
+survey Puits_Speedy -title "Puits_Speedy"
+   input Data/Puits_Speedy.th
+	
+   input Data/Puits_Speedy-plan.th2
+	#input Puits_Speedy-SP.th
+	input Data/Puits_Speedy-coupe.th2
+	#input Puits_Speedy-SC.th
+	
+endsurvey

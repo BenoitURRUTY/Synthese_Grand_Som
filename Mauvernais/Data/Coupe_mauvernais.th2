@@ -1,22 +1,22 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -121.72000000000116 -158.98999999999796 56433.523 29703.325200000003
-##XTHERION## xth_me_area_zoom_to 25
-##XTHERION## xth_me_image_insert {5031.8399999999965 1 1.0} {23909.030000000006 0@mauvernais.mauvernais} Mauvernais-coupe.xvi 0 {}
+##XTHERION## xth_me_area_adjust -121.720000000001 -158.989999999997 56433.523 29703.3252
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {5029.760000000002 1 1.0} {23931.9 0@mauvernais.mauvernais} Mauvernais-coupe.xvi 0 {}
 
 
 
 scrap SC-Mauvernais-1 -projection extended -scale [-128.0 -128.0 56427.243 -128.0 0.0 0.0 1436.5031722 0.0 m]
 
-line wall -reverse on -outline in
-  15922.0 18514.0
-  15974.0 18484.0 16216.0 18364.0 16264.0 18384.0
+line wall -outline in
+  16264.0 18384.0
+  16216.0 18364.0 15974.0 18484.0 15922.0 18514.0
   smooth off
 endline
 
-line wall -reverse on -outline in -subtype unsurveyed
-  16264.0 18384.0
-  16312.0 18404.0 16308.0 18538.0 16298.0 18572.0
-  16288.0 18606.0 15724.0 18770.0 15661.0 18770.0
+line wall -subtype unsurveyed -outline in
+  15661.0 18770.0
+  15724.0 18770.0 16288.0 18606.0 16298.0 18572.0
+  16308.0 18538.0 16312.0 18404.0 16264.0 18384.0
   smooth off
 endline
 
@@ -51,17 +51,17 @@ line wall
   smooth off
 endline
 
-point 18287.409999999996 17707.25 station -name 60@mauvernais
+point 18287.41 17707.25 station -name 60@mauvernais
 
-point 17302.739999999998 18228.600000000002 station -name 59@mauvernais
+point 17302.74 18228.6 station -name 59@mauvernais
 
-point 16995.61 17988.640000000003 station -name 58@mauvernais
+point 16995.61 17988.64 station -name 58@mauvernais
 
 point 16806.67 18041.04 station -name 57@mauvernais
 
 point 16671.76 17899.86 station -name 56@mauvernais
 
-point 16534.61 17844.170000000002 station -name 55@mauvernais
+point 16534.61 17844.17 station -name 55@mauvernais
 
 line wall
   7401.0 23100.0
@@ -222,7 +222,7 @@ line wall -outline in
   smooth off
 endline
 
-point 15900.57 18435.410000000003 station -name 54@mauvernais
+point 15900.57 18435.41 station -name 54@mauvernais
 
 point 15781.05 18534.29 station -name 53@mauvernais
 
@@ -232,9 +232,9 @@ point 15612.46 18773.91 station -name 51@mauvernais
 
 point 15112.05 19120.41 station -name 50@mauvernais
 
-point 14795.07 19326.260000000002 station -name 49@mauvernais
+point 14795.07 19326.26 station -name 49@mauvernais
 
-point 14385.94 19557.739999999998 station -name 48@mauvernais
+point 14385.94 19557.74 station -name 48@mauvernais
 
 point 14170.67 19782.22 station -name 47@mauvernais
 
@@ -244,7 +244,7 @@ point 13832.65 19946.38 station -name 45@mauvernais
 
 point 12071.31 20582.41 station -name 42@mauvernais
 
-point 12305.96 20175.989999999998 station -name 41@mauvernais
+point 12305.96 20175.99 station -name 41@mauvernais
 
 point 13076.7 19798.4 station -name 40@mauvernais
 
@@ -264,69 +264,69 @@ point 12493.33 20944.36 station -name 33@mauvernais
 
 point 12543.33 21353.56 station -name 32@mauvernais
 
-point 12101.0 21208.989999999998 station -name 31@mauvernais
+point 12101.0 21208.99 station -name 31@mauvernais
 
-point 11611.330000000002 21442.55 station -name 30@mauvernais
+point 11611.33 21442.55 station -name 30@mauvernais
 
 point 11381.84 21331.11 station -name 29@mauvernais
 
-point 11219.650000000001 21333.37 station -name 28@mauvernais
+point 11219.65 21333.37 station -name 28@mauvernais
 
 point 11016.0 21488.0 station -name 27@mauvernais
 
-point 10560.990000000002 21736.61 station -name 26@mauvernais
+point 10560.99 21736.61 station -name 26@mauvernais
 
-point 10047.150000000001 22071.59 station -name 25@mauvernais
+point 10047.15 22071.59 station -name 25@mauvernais
 
 point 9496.93 22302.87 station -name 24@mauvernais
 
-point 9366.830000000002 22315.4 station -name 23@mauvernais
+point 9366.83 22315.4 station -name 23@mauvernais
 
-point 9278.279999999999 22354.64 station -name 22@mauvernais
+point 9278.28 22354.64 station -name 22@mauvernais
 
 point 9023.48 22401.41 station -name 21@mauvernais
 
-point 8554.369999999999 22753.62 station -name 20@mauvernais
+point 8554.37 22753.62 station -name 20@mauvernais
 
 point 8394.3 22727.41 station -name 19@mauvernais
 
 point 8102.43 22914.07 station -name 18@mauvernais
 
-point 7969.560000000001 23023.989999999998 station -name 17@mauvernais
+point 7969.56 23023.99 station -name 17@mauvernais
 
-point 7879.740000000002 23219.28 station -name 16@mauvernais
+point 7879.74 23219.28 station -name 16@mauvernais
 
-point 7743.259999999998 23152.42 station -name 15@mauvernais
+point 7743.26 23152.42 station -name 15@mauvernais
 
-point 7560.549999999999 23181.690000000002 station -name 14@mauvernais
+point 7560.55 23181.69 station -name 14@mauvernais
 
-point 7350.799999999999 23204.84 station -name 13@mauvernais
+point 7350.8 23204.84 station -name 13@mauvernais
 
-point 7220.369999999999 23213.28 station -name 12@mauvernais
+point 7220.37 23213.28 station -name 12@mauvernais
 
-point 7084.290000000001 23298.64 station -name 11@mauvernais
+point 7084.29 23298.64 station -name 11@mauvernais
 
 point 6934.43 23311.22 station -name 10@mauvernais
 
-point 6823.5999999999985 23411.72 station -name 9@mauvernais
+point 6823.6 23411.72 station -name 9@mauvernais
 
-point 6686.6500000000015 23407.65 station -name 8@mauvernais
+point 6686.65 23407.65 station -name 8@mauvernais
 
-point 6534.290000000001 23426.629999999997 station -name 7@mauvernais
+point 6534.29 23426.63 station -name 7@mauvernais
 
 point 6415.07 23437.27 station -name 6@mauvernais
 
-point 6081.959999999999 23482.9 station -name 5@mauvernais
+point 6081.96 23482.9 station -name 5@mauvernais
 
 point 5898.93 23546.28 station -name 4@mauvernais
 
-point 5722.490000000002 23698.58 station -name 3@mauvernais
+point 5722.49 23698.58 station -name 3@mauvernais
 
-point 5556.32 23734.809999999998 station -name 2@mauvernais
+point 5556.32 23734.81 station -name 2@mauvernais
 
-point 5275.610000000001 23784.3 station -name 1@mauvernais
+point 5275.61 23784.3 station -name 1@mauvernais
 
-point 5030.279999999999 23937.010000000002 station -name 0@mauvernais
+point 5030.28 23937.01 station -name 0@mauvernais
 
 endscrap
 
@@ -384,14 +384,14 @@ line wall
   18634.0 17200.0 18638.0 17046.0 18678.0 17034.0
   18718.0 17022.0 18842.0 17000.0 18878.0 17002.0
   18914.0 17004.0 19008.0 17030.0 19082.0 17056.0
-  19156.0 17082.0 19219.46 17153.82 19305.73 17169.910000000003
+  19156.0 17082.0 19219.46 17153.82 19305.73 17169.91
   19392.0 17186.0 19438.0 17218.0 19436.0 17180.0
   19434.0 17142.0 19582.0 16532.0 19574.0 16494.0
   19566.0 16456.0 19658.0 16200.0 19568.0 16224.0
   smooth off
 endline
 
-line water-flow -clip off -subtype permanent
+line water-flow -subtype permanent -clip off
   21484.0 14298.0
   21532.0 14280.0 21652.0 14184.0 21704.0 14146.0
   21756.0 14108.0 22090.0 13878.0 22126.0 13842.0
@@ -445,53 +445,53 @@ line wall
   smooth off
 endline
 
-point 26533.44 10657.500000000002 station -name 84@mauvernais
+point 26533.44 10657.5 station -name 84@mauvernais
 
 point 26350.0 10666.0 station -name 83@mauvernais
 
-point 25425.46 11293.400000000001 station -name 82@mauvernais
+point 25425.46 11293.4 station -name 82@mauvernais
 
-point 25139.75 11519.850000000002 station -name 81@mauvernais
+point 25139.75 11519.85 station -name 81@mauvernais
 
-point 24854.649999999998 11664.480000000001 station -name 80@mauvernais
+point 24854.65 11664.48 station -name 80@mauvernais
 
-point 24365.01 12084.160000000002 station -name 79@mauvernais
+point 24365.01 12084.16 station -name 79@mauvernais
 
-point 23928.829999999998 12350.400000000001 station -name 78@mauvernais
+point 23928.83 12350.4 station -name 78@mauvernais
 
-point 23211.46 12976.200000000003 station -name 77@mauvernais
+point 23211.46 12976.2 station -name 77@mauvernais
 
-point 22882.03 13208.590000000002 station -name 76@mauvernais
+point 22882.03 13208.59 station -name 76@mauvernais
 
-point 22495.739999999998 13465.250000000002 station -name 75@mauvernais
+point 22495.74 13465.25 station -name 75@mauvernais
 
-point 22139.89 13819.850000000002 station -name 74@mauvernais
+point 22139.89 13819.85 station -name 74@mauvernais
 
-point 21393.67 14356.060000000001 station -name 73@mauvernais
+point 21393.67 14356.06 station -name 73@mauvernais
 
-point 20996.44 14680.040000000003 station -name 72@mauvernais
+point 20996.44 14680.04 station -name 72@mauvernais
 
-point 19896.86 15592.920000000002 station -name 71@mauvernais
+point 19896.86 15592.92 station -name 71@mauvernais
 
-point 19791.15 15662.890000000001 station -name 70@mauvernais
+point 19791.15 15662.89 station -name 70@mauvernais
 
-point 19762.809999999998 15713.810000000001 station -name 69@mauvernais
+point 19762.81 15713.81 station -name 69@mauvernais
 
-point 19724.75 16585.420000000002 station -name 68@mauvernais
+point 19724.75 16585.42 station -name 68@mauvernais
 
-point 19663.05 16534.010000000002 station -name 67@mauvernais
+point 19663.05 16534.01 station -name 67@mauvernais
 
-point 19587.989999999998 17248.18 station -name 66@mauvernais
+point 19587.99 17248.18 station -name 66@mauvernais
 
-point 19305.73 17169.910000000003 station -name 65@mauvernais
+point 19305.73 17169.91 station -name 65@mauvernais
 
 point 19047.89 17155.04 station -name 64@mauvernais
 
 point 18836.0 17064.0 station -name 63@mauvernais
 
-point 18675.35 17331.570000000003 station -name 62@mauvernais
+point 18675.35 17331.57 station -name 62@mauvernais
 
-point 18506.579999999998 17318.29 station -name 61@mauvernais
+point 18506.58 17318.29 station -name 61@mauvernais
 
 endscrap
 
@@ -499,19 +499,13 @@ endscrap
 
 scrap SC-Mauvernais-3 -projection extended -scale [-128.0 -128.0 56427.243 -128.0 0.0 0.0 1436.5031722 0.0 m]
 
-point 29218.579999999998 10421.260000000002 station -name M2.83@mauvernais2
+point 29218.58 10421.26 station -name M2.83@mauvernais2
 
-point 29124.66 10411.190000000002 station -name M2.84@mauvernais2
+point 29124.66 10411.19 station -name M2.84@mauvernais2
 
-point 28808.579999999998 10335.390000000003 station -name M2.85@mauvernais2
+point 28808.58 10335.39 station -name M2.85@mauvernais2
 
-point 28625.6 10240.680000000002 station -name M2.86@mauvernais2
-
-line water-flow -subtype conjectural
-endline
-
-line water-flow -subtype conjectural
-endline
+point 28625.6 10240.68 station -name M2.86@mauvernais2
 
 line water-flow -subtype conjectural
   30032.0 9228.0
@@ -554,53 +548,53 @@ line wall
   smooth off
 endline
 
-point 34401.33 8251.990000000003 station -name M2.59@mauvernais2
+point 34401.33 8251.99 station -name M2.59@mauvernais2
 
-point 34450.92 8283.920000000004 station -name M2.60@mauvernais2
+point 34450.92 8283.92 station -name M2.60@mauvernais2
 
-point 34218.92 8324.470000000005 station -name M2.61@mauvernais2
+point 34218.92 8324.47 station -name M2.61@mauvernais2
 
-point 33950.7 8337.180000000004 station -name M2.62@mauvernais2
+point 33950.7 8337.18 station -name M2.62@mauvernais2
 
-point 33593.84 8223.410000000003 station -name M2.63@mauvernais2
+point 33593.84 8223.41 station -name M2.63@mauvernais2
 
-point 33383.58 7997.190000000004 station -name M2.64@mauvernais2
+point 33383.58 7997.19 station -name M2.64@mauvernais2
 
-point 33332.5 8453.620000000003 station -name M2.65@mauvernais2
+point 33332.5 8453.62 station -name M2.65@mauvernais2
 
-point 33243.7 8848.680000000004 station -name M2.66@mauvernais2
+point 33243.7 8848.68 station -name M2.66@mauvernais2
 
-point 33088.18 8808.860000000004 station -name M2.67@mauvernais2
+point 33088.18 8808.86 station -name M2.67@mauvernais2
 
-point 33047.06 8838.500000000004 station -name M2.68@mauvernais2
+point 33047.06 8838.5 station -name M2.68@mauvernais2
 
-point 32885.72 9012.880000000005 station -name M2.69@mauvernais2
+point 32885.72 9012.88 station -name M2.69@mauvernais2
 
-point 32533.17 9450.980000000003 station -name M2.70@mauvernais2
+point 32533.17 9450.98 station -name M2.70@mauvernais2
 
-point 32010.59 9343.120000000003 station -name M2.71@mauvernais2
+point 32010.59 9343.12 station -name M2.71@mauvernais2
 
-point 31703.43 9700.020000000004 station -name M2.72@mauvernais2
+point 31703.43 9700.02 station -name M2.72@mauvernais2
 
-point 31538.28 10006.420000000004 station -name M2.73@mauvernais2
+point 31538.28 10006.42 station -name M2.73@mauvernais2
 
-point 31352.769999999997 9970.770000000004 station -name M2.74@mauvernais2
+point 31352.77 9970.77 station -name M2.74@mauvernais2
 
-point 31002.42 10018.870000000003 station -name M2.75@mauvernais2
+point 31002.42 10018.87 station -name M2.75@mauvernais2
 
-point 30679.129999999997 10004.840000000004 station -name M2.76@mauvernais2
+point 30679.13 10004.84 station -name M2.76@mauvernais2
 
-point 30416.59 10061.670000000004 station -name M2.77@mauvernais2
+point 30416.59 10061.67 station -name M2.77@mauvernais2
 
-point 30152.16 10032.070000000003 station -name M2.78@mauvernais2
+point 30152.16 10032.07 station -name M2.78@mauvernais2
 
-point 30002.19 10007.870000000003 station -name M2.79@mauvernais2
+point 30002.19 10007.87 station -name M2.79@mauvernais2
 
-point 29957.36 10073.380000000005 station -name M2.80@mauvernais2
+point 29957.36 10073.38 station -name M2.80@mauvernais2
 
-point 29794.449999999997 10298.470000000005 station -name M2.81@mauvernais2
+point 29794.45 10298.47 station -name M2.81@mauvernais2
 
-point 29590.43 10323.580000000004 station -name M2.82@mauvernais2
+point 29590.43 10323.58 station -name M2.82@mauvernais2
 
 line wall
   31424.0 9024.0
@@ -670,37 +664,121 @@ line wall
   smooth off
 endline
 
-point 28473.17 10124.350000000002 station -name M2.87@mauvernais2
+point 28473.17 10124.35 station -name M2.87@mauvernais2
 
-point 28245.09 10553.310000000001 station -name 95@mauvernais
+point 28245.09 10553.31 station -name 95@mauvernais
 
-point 28124.469999999998 10565.770000000002 station -name 94@mauvernais
+point 28124.47 10565.77 station -name 94@mauvernais
 
-point 27943.82 10459.780000000002 station -name 93b@mauvernais
+point 27943.82 10459.78 station -name 93b@mauvernais
 
-point 27758.96 11035.560000000001 station -name 93@mauvernais
+point 27758.96 11035.56 station -name 93@mauvernais
 
-point 27673.25 11146.450000000003 station -name 92@mauvernais
+point 27673.25 11146.45 station -name 92@mauvernais
 
-point 27511.71 11173.490000000002 station -name 91@mauvernais
+point 27511.71 11173.49 station -name 91@mauvernais
 
-point 27236.64 10980.160000000002 station -name 90@mauvernais
+point 27236.64 10980.16 station -name 90@mauvernais
 
 point 27092.0 10932.0 station -name 89@mauvernais
 
-point 26968.469999999998 11010.540000000003 station -name 88@mauvernais
+point 26968.47 11010.54 station -name 88@mauvernais
 
-point 26855.84 10950.650000000001 station -name 87@mauvernais
+point 26855.84 10950.65 station -name 87@mauvernais
 
-point 26789.449999999997 10875.870000000003 station -name 86@mauvernais
+point 26789.45 10875.87 station -name 86@mauvernais
 
-point 26665.53 10664.660000000002 station -name 85@mauvernais
+point 26665.53 10664.66 station -name 85@mauvernais
 
 endscrap
 
 
 
 scrap SC-Mauvernais-4 -projection extended -scale [-128.0 -128.0 56427.243 -128.0 0.0 0.0 1436.5031722 0.0 m]
+
+point 37430.310000000005 8434.760000000002 station -name 1@ricohplouf
+
+point 36951.07000000001 8334.920000000002 station -name 2@ricohplouf
+
+point 36507.170000000006 8349.09 station -name 3@ricohplouf
+
+point 35684.770000000004 8180.1100000000015 station -name 4@ricohplouf
+
+point 35382.490000000005 8148.940000000001 station -name 5@ricohplouf
+
+point 34873.420000000006 8045.710000000001 station -name PTR4@ricohplouf
+
+endscrap
+
+
+
+scrap SC-Mauvernais-5 -projection extended -scale [-128.0 -128.0 56427.243 -128.0 0.0 0.0 1436.5031722 0.0 m]
+
+point 41896.46000000001 5671.240000000002 station -name M2.33@mauvernais2
+
+point 41806.07000000001 5735.710000000001 station -name M2.34@mauvernais2
+
+point 41616.810000000005 5823.560000000001 station -name M2.35@mauvernais2
+
+point 40697.68000000001 5773.780000000001 station -name M2.36@mauvernais2
+
+point 40506.03 5818.740000000002 station -name M2.37@mauvernais2
+
+point 40384.170000000006 5767.260000000002 station -name M2.38@mauvernais2
+
+point 39919.41 6067.930000000002 station -name M2.39@mauvernais2
+
+point 39564.78 6225.8200000000015 station -name M2.40@mauvernais2
+
+point 38991.600000000006 6361.3200000000015 station -name M2.41@mauvernais2
+
+point 38497.850000000006 6820.130000000001 station -name M2.42@mauvernais2
+
+point 38366.89 6838.770000000001 station -name M2.43@mauvernais2
+
+point 38153.560000000005 6753.010000000001 station -name M2.44@mauvernais2
+
+point 37851.19 7121.130000000001 station -name M2.45@mauvernais2
+
+point 37743.89 6988.1500000000015 station -name M2.46@mauvernais2
+
+point 37513.23 6924.180000000001 station -name M2.47@mauvernais2
+
+point 37280.060000000005 7246.290000000001 station -name M2.48@mauvernais2
+
+point 36879.91 7805.210000000001 station -name M2.49@mauvernais2
+
+point 36709.53 8060.690000000001 station -name M2.50@mauvernais2
+
+point 36547.200000000004 8945.130000000001 station -name M2.51@mauvernais2
+
+point 36697.880000000005 8072.430000000001 station -name M2.52@mauvernais2
+
+point 36661.23 8096.960000000001 station -name M2.53@mauvernais2
+
+point 35312.950000000004 8134.790000000001 station -name M2.55@mauvernais2
+
+point 35684.530000000006 8160.120000000001 station -name M2.54@mauvernais2
+
+point 35433.79 8324.820000000002 station -name M2.56@mauvernais2
+
+point 35063.83 8104.280000000002 station -name M2.57@mauvernais2
+
+point 34873.420000000006 8045.710000000001 station -name 34@mauvernais-shunt
+
+endscrap
+
+
+
+scrap SC-Mauvernais-6 -projection extended -scale [-128.0 -128.0 56427.243 -128.0 0.0 0.0 1436.5031722 0.0 m]
+
+point 43640.25 5162.300000000001 station -name PTR5@mauvernais2
+
+point 43448.03 5220.330000000002 station -name M2.30@mauvernais2
+
+point 42570.28 5379.840000000002 station -name M2.31@mauvernais2
+
+point 42097.94 5435.330000000002 station -name M2.32@mauvernais2
 
 endscrap
 

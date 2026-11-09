@@ -171,7 +171,7 @@ layout my_layout-coupe
   
    # Pour faire la topo dans le system UTM  
    # Decommenter la ligne, et remplacer xx par la zone UTM
-   #cs UTM32
+   cs EPSG:2154
   
    # "base-scale" specifie l echelle auquel nous avons
    # dessine nos croquis. Par defaut, c est 1/200.
@@ -297,11 +297,13 @@ export map -proj extended -layout xviexport -fmt xvi -o Data/Grand-Som-coupe.xvi
 #export map -o Outputs/Grand-Som-plan.pdf -layout my_layout
  
 export model -o Outputs/Grand-Som.lox
-  export model -o Outputs/Grand-Som-model.kml
-  export model -o Outputs/Grand-Som-model -fmt esri
+export model -o Outputs/Grand-Som-model.kml
+export model -o Outputs/Grand-Som-model -fmt esri
 
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/Grand-Som -layout my_layout
-  
+export map -proj extended -fmt esri -o Outputs/Grand-Som_coupe -layout my_layout-coupe
+export map -proj [elevation 340] -fmt esri -o Outputs/Grand-Som_projected -layout my_layout-coupe
+
 # Export des fichiers kml
 export map -proj plan -fmt kml -o Outputs/Grand-Som.kml -layout my_layout

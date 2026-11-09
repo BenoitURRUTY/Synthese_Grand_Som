@@ -292,18 +292,22 @@ export map -proj extended -layout xviexport -fmt xvi -o Data/Mauvernais-coupe.xv
 # export map -proj [elevation 17] -layout xviexport -fmt xvi -o Data/Mauvernais-coupe-elevation.xvi 
 
 # Select maps
-select MP-allcave@mauvernais
-select MC-allcave@mauvernais
-	 
+select MP-Mauvernais-plan-tot@mauvernais
+select MC-Mauvernais-coupe-tot@mauvernais
+ 
 export map -projection extended -layout my_layout-coupe -o Outputs/Mauvernais-coupe.pdf 
 export map -o Outputs/Mauvernais-plan.pdf -layout my_layout
  
 export model -o Outputs/Mauvernais.lox
   export model -o Outputs/Mauvernais-model.kml
-  export model -o Outputs/Mauvernais-model -fmt esri
+  export model -o Outputs/Mauvernais -fmt esri
 
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/Mauvernais -layout my_layout
+export map -proj extended -fmt esri -o Outputs/Mauvernais_coupe_extended -layout my_layout-coupe
+export map -proj [elevation 17] -fmt esri -o Outputs/Mauvernais_coupe_projeted -layout my_layout-coupe
+
+
   
 # Export des fichiers kml
 export map -proj plan -fmt kml -o Outputs/Mauvernais.kml -layout my_layout

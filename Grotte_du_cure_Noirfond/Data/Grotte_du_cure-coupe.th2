@@ -7,8 +7,6 @@ encoding  utf-8
 
 scrap SC-Grotte_du_cure_01 -projection extended -station-names "" "@Grotte_du_cure" -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-line wall
-endline
 
 point 917.7299999999994 544.564 station -name 19
 
@@ -250,8 +248,6 @@ line wall -reverse on -subtype invisible
   smooth off
 endline
 
-line wall
-endline
 
 line rock-border
   -172.5 524.25
@@ -298,8 +294,6 @@ line wall -subtype invisible
   smooth off
 endline
 
-line wall
-endline
 
 line wall -reverse on
   162.5 549.75
@@ -363,8 +357,6 @@ area water
   l147-312-537
 endarea
 
-line contour -visibility off
-endline
 
 line contour -id l147-312-537 -close on -visibility off
   223.75 557.25
@@ -381,8 +373,6 @@ point 224.25 637.25 stalactites-stalagmites
 
 point 159.5 646.75 stalactites
 
-area sump
-endarea
 
 area sump
   l155-186-551
@@ -510,13 +500,9 @@ point -1084.9300000000005 377.794 station -name 56
 
 point -1013.5400000000006 358.264 station -name 55
 
-line wall
-endline
 
 point -685.8600000000006 327.084 station -name 51
 
-line wall
-endline
 
 line wall -reverse on -subtype invisible
   -577.0 237.75
@@ -528,8 +514,6 @@ line wall -reverse on -subtype invisible
   smooth off
 endline
 
-line wall -subtype presumed
-endline
 
 line wall -subtype presumed
   -658.5 239.5
@@ -644,8 +628,6 @@ line wall
   smooth off
 endline
 
-line rope
-endline
 
 line rope
   -590.5 428.25
@@ -728,8 +710,6 @@ point -1578.25 493.5 height -value [-11 m] -scale l
 
 point -1272.0 386.0 label -text "?"
 
-line label
-endline
 
 line water-flow
   -1378.0 367.0
@@ -877,8 +857,6 @@ endscrap
 
 scrap SC-Grotte_du_cure_04 -projection extended -station-names "" "@Grotte_du_cure" -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-line wall
-endline
 
 point -1084.9300000000005 570.554 station -name 57
 

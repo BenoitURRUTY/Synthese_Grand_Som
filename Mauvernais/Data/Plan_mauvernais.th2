@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -123.0 -114.0 32888.923200000005 22740.4374
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {3154.5599999999977 1 1.0} {8911.630000000001 0@mauvernais.mauvernais} Mauvernais-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {3156.5599999999977 1 1.0} {8909.630000000001 0@mauvernais.mauvernais} Mauvernais-map.xvi 0 {}
 
 
 
@@ -27,6 +27,11 @@ line pit -close on
   4385.0 9730.5 4390.0 9723.5 4409.0 9724.0
   4428.0 9724.5 4438.0 9731.0 4442.0 9739.0
   4446.0 9747.0 4431.0 9762.5 4414.5 9758.5
+endline
+
+line wall -subtype invisible
+  3121.0 9087.0
+  3164.0 8949.0
 endline
 
 line wall
@@ -554,9 +559,6 @@ line wall
 endline
 
 line wall
-endline
-
-line wall
   21591.5 11523.5
   21620.5 11561.0 21671.0 11691.0 21686.0 11734.5
   21701.0 11778.0 21749.5 11941.0 21769.0 11948.5
@@ -716,9 +718,6 @@ line slope
 endline
 
 line wall
-endline
-
-line wall
   24093.0 13635.0
   24072.0 13633.0 24055.0 13643.0 24013.0 13623.0
   23971.0 13603.0 23777.0 13419.0 23772.0 13380.0
@@ -744,18 +743,21 @@ endline
 line slope
   23929.0 12805.0
   23946.0 12802.0 24112.0 12786.0 24176.0 12873.0
+  smooth off
   l-size 40.0
 endline
 
 line slope
   23932.0 12892.0
   23963.0 12892.0 24109.0 12910.0 24142.0 12948.0
+  smooth off
   l-size 40.0
 endline
 
 line floor-meander
   24577.0 13452.0
   24626.0 13449.0 25000.0 13452.0 25055.0 13452.0
+  smooth off
 endline
 
 point 25069.0 13399.0 stalactites-stalagmites -scale xl
@@ -794,9 +796,6 @@ line wall
 endline
 
 line wall
-endline
-
-line wall
   24547.0 13347.0
   24634.0 13353.0 24754.0 13362.0 24880.0 13368.0
   25006.0 13374.0 24923.0 13342.0 24895.0 13209.0
@@ -830,13 +829,13 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall -subtype unsurveyed -outline in
   24304.0 13379.0
   24329.0 13324.0 24348.0 13085.0 24328.0 13076.0
   smooth off
 endline
 
-line wall
+line wall -outline in
   24328.0 13076.0
   24289.0 13083.0 24017.0 13120.0 24003.0 13141.0
   23989.0 13162.0 23982.0 13276.0 23988.0 13338.0
@@ -1407,10 +1406,6 @@ point 4032.6100000000006 10371.980000000001 station -name 19@mauvernais
 
 point 3938.5800000000017 10095.67 station -name 18@mauvernais
 
-point 6818.640000000001 11765.640000000001 station -name 38@mauvernais
-
-point 6913.6500000000015 11584.710000000001 station -name 37@mauvernais
-
 point 6777.240000000002 11471.03 station -name 36@mauvernais
 
 point 6706.080000000002 11510.79 station -name 35@mauvernais
@@ -1670,6 +1665,7 @@ endline
 line pit -reverse on
   24367.0 10334.0
   24380.0 10417.0 24471.0 10607.0 24509.0 10674.0
+  smooth off
 endline
 
 line wall
@@ -1856,14 +1852,24 @@ line wall -reverse on -outline in
   smooth off
 endline
 
+line wall -reverse on -outline none -subtype invisible
+  11611.0 13288.0
+  11638.0 13230.0
+endline
+
+line wall -outline none -subtype invisible
+  8493.0 12513.0
+  8550.0 12451.0
+endline
+
 line wall -close on -outline in
-  7190.0 11785.0
-  7154.0 11791.0 7043.0 11900.0 7082.0 11919.0
+  7150.0 11790.0
+  7115.78 11802.83 7043.0 11900.0 7082.0 11919.0
   7121.0 11938.0 7157.0 11959.0 7222.0 11975.0
   7287.0 11991.0 7311.0 12025.0 7319.0 12036.0
   7327.0 12047.0 7442.0 12213.0 7458.0 12199.0
   7474.0 12185.0 7409.0 11916.0 7396.0 11897.0
-  7383.0 11878.0 7226.0 11779.0 7190.0 11785.0
+  7383.0 11878.0 7214.0 11766.0 7150.0 11790.0
 endline
 
 line pit
@@ -2027,6 +2033,8 @@ line wall -outline in
   smooth off
 endline
 
+point 18457.449999999997 3693.120000000001 station -name 4@ricoh2
+
 line wall -outline in
   23314.0 5576.0
   23295.0 5552.0 23258.0 5514.0 23253.0 5501.0
@@ -2071,6 +2079,17 @@ line wall -outline in
   20260.0 3788.0 20258.0 3815.0 20231.0 3822.0
   20204.0 3829.0 20050.0 3842.0 20001.0 3843.0
   19952.0 3844.0 19675.0 3830.0 19650.0 3828.0
+  smooth off
+endline
+
+point 23358.17 6178.26 station -name 46@ricoh2
+
+point 23527.509999999995 6377.18 station -name 53@ricoh2
+
+point 22061.469999999998 3876.2400000000007 station -name 26@ricoh2
+
+line wall -outline in
+  19650.0 3828.0
   19625.0 3826.0 19595.0 3793.0 19578.0 3791.0
   19561.0 3789.0 19526.0 3792.0 19498.0 3791.0
   19470.0 3790.0 19281.0 3788.0 19216.0 3771.0
@@ -2095,7 +2114,7 @@ endline
 
 point 18138.6 3670.13 station -name 0@ricoh2
 
-point 18236.0 3734.0 station -name 3@ricoh2
+point 18236.0 3734.0 station -name 1@ricoh2
 
 point 18578.23 3752.7 station -name 2@ricoh2
 
@@ -2176,6 +2195,7 @@ line wall -outline in
   23331.0 6178.0 23362.0 6168.0 23380.0 6189.0
   23398.0 6210.0 23416.0 6223.0 23422.0 6250.0
   23428.0 6277.0 23421.0 6306.0 23451.0 6333.0
+  smooth off
 endline
 
 line wall -outline in
@@ -2195,6 +2215,7 @@ line wall -outline in
   23560.0 5768.0 23541.0 5741.0 23522.0 5733.0
   23503.0 5725.0 23487.0 5706.0 23471.0 5705.0
   23455.0 5704.0 23435.0 5705.0 23409.0 5712.0
+  smooth off
 endline
 
 line wall
@@ -2246,12 +2267,14 @@ endline
 line slope -reverse on
   23371.0 5649.0
   23379.0 5676.0 23404.0 5677.0 23434.0 5717.0
+  smooth off
   l-size 40.0
 endline
 
 line pit
   23724.0 6817.0
   23723.0 6782.0 23732.0 6684.0 23743.0 6666.0
+  smooth off
 endline
 
 line wall

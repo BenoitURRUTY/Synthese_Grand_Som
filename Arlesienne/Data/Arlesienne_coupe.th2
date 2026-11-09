@@ -10,6 +10,7 @@ scrap SC-Arl-1 -projection extended -scale [-128.0 -128.0 12647.6918 -128.0 0.0 
 line wall
   5334.0 7072.0
   5354.0 6990.0 5486.0 6562.0 5504.0 6534.0
+  smooth off
 endline
 
 line rope -clip off
@@ -27,6 +28,7 @@ line wall
   4984.0 7550.0 5078.0 7110.0 5068.0 7036.0
   5058.0 6962.0 5146.0 6706.0 5166.0 6764.0
   5186.0 6822.0 5216.0 7070.0 5214.0 7082.0
+  smooth off
 endline
 
 line rope
@@ -112,8 +114,6 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line wall
-endline
 
 line wall
   4920.0 8046.0
@@ -338,6 +338,7 @@ line water-flow -subtype conjectural
   5616.0 2376.0 5960.0 2344.0 6044.0 2218.0
   6128.0 2092.0 6398.0 1884.0 6604.0 1840.0
   6810.0 1796.0 7334.0 1706.0 7470.0 1698.0
+  smooth off
 endline
 
 line wall
@@ -381,6 +382,8 @@ endscrap
 
 scrap SC-Arl-3 -projection extended -scale [-128.0 -128.0 12647.6918 -128.0 0.0 0.0 324.50257172 0.0 m]
 
+point 10674.0 1964.0 label -text "Galerie Angela"
+
 line wall
   11250.0 1400.0
   11188.0 1440.0 11034.0 1528.0 10974.0 1560.0
@@ -396,8 +399,6 @@ line wall
   smooth off
 endline
 
-line border -subtype invisible
-endline
 
 area sump
   l89-11342-1348
@@ -412,8 +413,8 @@ line border -id l89-11342-1348 -close on -subtype invisible
 endline
 
 line wall
-  11448.0 1384.0
-  11394.0 1390.0 11282.0 1380.0 11250.0 1400.0
+  11458.0 1354.0
+  11404.0 1360.0 11282.0 1380.0 11250.0 1400.0
   smooth off
 endline
 
@@ -433,6 +434,7 @@ line wall
   11246.0 1338.0 11304.0 1284.0 11340.0 1280.0
   11376.0 1276.0 11416.0 1284.0 11444.0 1284.0
   smooth off
+  11444.0 1284.0 11504.0 1320.0 11458.0 1354.0
 endline
 
 point 11300.79 1335.1699999999996 station -name fondar.31@salle_arlesienne
@@ -461,8 +463,6 @@ point 9045.689999999999 2051.9999999999995 station -name fondar.20@salle_arlesie
 
 point 8777.31 2140.7599999999993 station -name fondar.19@salle_arlesienne
 
-line wall -subtype presumed
-endline
 
 endscrap
 
@@ -480,8 +480,6 @@ line wall -close on -reverse on
   2902.0 3628.0 2968.0 3688.0 2900.0 3688.0
 endline
 
-line wall
-endline
 
 line wall
   3142.0 3824.0

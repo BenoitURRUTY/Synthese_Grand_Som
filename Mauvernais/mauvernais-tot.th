@@ -5,6 +5,7 @@
     input "Principal/Data/mauvernais2.th"
     input "Affluent_Ricohplouf/Data/ricoh2.th"
     input "Affluent_Ricohplouf/Data/ricohplouf.th"
+    input "Puits_Speedy/Data/Puits_Speedy.th"
     input Data/Plan_mauvernais.th2
     input Data/Coupe_mauvernais.th2
 
@@ -15,4 +16,5 @@
     equate "96@mauvernais" "69@mauvernais-shunt"
     equate "52@mauvernais-shunt" "0@ricohplouf"
     equate "32@mauvernais-shunt" "75@ricoh2"
+    equate "M2.20@mauvernais2" "34@Puits_Speedy"
   endsurvey

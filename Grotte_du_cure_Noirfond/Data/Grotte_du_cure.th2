@@ -14,8 +14,6 @@ line pit
   smooth off
 endline
 
-line contour
-endline
 
 line arrow
   1922.0 1702.0
@@ -585,8 +583,6 @@ endline
 
 point 1544.0 1267.5 traverse
 
-area clay
-endarea
 
 area clay
   l96-956-921
@@ -823,8 +819,6 @@ line fault -clip off
   840.25 285.0
 endline
 
-line pit
-endline
 
 line pit
   642.0 499.25
@@ -965,8 +959,6 @@ point 605.25 1130.75 label -text [PTR 54] -scale xs
 
 point 586.07 1098.99 station -name 42
 
-line wall -outline in
-endline
 
 line pit -reverse on
   417.25 1120.75

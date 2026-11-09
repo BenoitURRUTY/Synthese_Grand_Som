@@ -1,0 +1,11 @@
+encoding  utf-8
+map MP-Puits_Speedy-plan-tot -title "Puits_Speedy"
+  # SP-Puits_Speedy-1
+
+endmap
+
+
+map MC-Puits_Speedy-coupe-tot -title "Puits_Speedy"
+  # SC-Puits_Speedy-1
+
+endmap
